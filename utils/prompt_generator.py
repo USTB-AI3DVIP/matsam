@@ -37,6 +37,10 @@ class PromptGenerator(object):
                 np_center_res.append([cX, cY])
         center_res.append(np.array(np_center_res))
 
+        # automatically adjust the number of grid points based on regional perception point density
+        # use only on images with overly dense prompts, to improve model computational efficiency and reduce redundant operations
+        # self.n_per_side_base -= int(self.image.shape[0] * self.image.shape[1] / len(center_res[0]))
+
         # add grid points
         for i in range(self.layers + 1):
             n_per_side = int(self.n_per_side_base / (self.scales ** i))
