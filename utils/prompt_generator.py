@@ -19,8 +19,8 @@ class PromptGenerator(object):
         # generate region-aware prompt points using traditional segmentation methods
         if self.method_type == 1:
             dst = cv2.Canny(self.image, 80, 130)
-            canny_img = PostPrecess.remove_small_objects(dst, min_size=15)  # 去除小区域
-            canny_img = PostPrecess.dilation(np.uint8(canny_img > 0) * 255, square=5)  # 膨胀
+            canny_img = PostPrecess.remove_small_objects(dst, min_size=15)
+            canny_img = PostPrecess.dilation(np.uint8(canny_img > 0) * 255, square=5)
             contours, hierarchy = cv2.findContours(canny_img, cv2.RETR_TREE, cv2.CHAIN_APPROX_TC89_KCOS)
         elif self.method_type == 2:
             image_gray = cv2.cvtColor(self.image, cv2.COLOR_BGR2GRAY)
@@ -45,7 +45,7 @@ class PromptGenerator(object):
             points_x = np.tile(points_one_side[None, :], (n_per_side, 1))
             points_y = np.tile(points_one_side[:, None], (1, n_per_side))
             points = np.stack([points_x, points_y], axis=-1).reshape(-1, 2)
-            if len(center_res[0]) > 0:  # 错误处理，防止没有找到质心点报错
+            if len(center_res[0]) > 0:  # prevent missing centroid points
                 points = np.concatenate((points, np.array(np_center_res)), 0)
             self.points_layers.append(points)
 
