@@ -55,6 +55,6 @@ def predict(dataset_path, model_path):
 if __name__ == '__main__':
     model_path = "/root/data/checkpoints_new/Data_256_1.pth"
 
-    dataset_path = '/root/data/dataset/PI_1/test/'
+    dataset_path = '/root/data/dataset/PI_1/inhouse/'
 
     predict(dataset_path, model_path)

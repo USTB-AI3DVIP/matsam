@@ -9,7 +9,7 @@ from utils.post_process import PostPrecess
 from utils.metric import get_ari, get_vi, get_map_2018kdsb, get_F1, get_recall
 from natsort import ns, natsorted
 
-dataset_path = '/root/data/dataset/PI_1/test/label/'
+dataset_path = '/root/data/dataset/PI_1/inhouse/label/'
 pred_img_list = '/root/data1/unet/result/PI_1/'
 
 img_list = natsorted(os.listdir(pred_img_list), alg=ns.PATH)
