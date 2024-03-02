@@ -13,6 +13,8 @@ Specifically, in an unsupervised and training-free way, it adaptively generates 
 For common microstructures including grain boundary and multiple phases, MatSAM achieves superior zero-shot segmentation performance to conventional rule-based methods and is even preferable to supervised learning methods evaluated on 16 microscopy datasets whose micrographs are imaged by the optical microscope (OM) and scanning electron microscope (SEM). Especially, on 4 public datasets, MatSAM shows unexpected competitive segmentation performance against their specialist models.
 We believe that, without the need for human labeling, MatSAM can significantly reduce the cost of quantitative characterization and statistical analysis of extensive microstructures of materials, and thus accelerate the design of new materials.
 
+## Overview of MatSAM
+![overview](/assets/framework.jpg "Overview of MatSAM")
 
 ## To run the code
 
