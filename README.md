@@ -5,6 +5,13 @@ This repository includes the source code and test data for the paper https://arx
 > If you have any questions or suggestions, please feel free to contact us.
 
 ## Abstract 
+Efficient and accurate extraction of microstructures in micrographs of materials is essential in process optimization and the exploration of structure-property relationships. 
+Deep learning-based image segmentation techniques that rely on manual annotation are laborious and time-consuming and hardly meet the demand for model transferability and generalization on various source images. Segment Anything Model (SAM), a large visual model with powerful deep feature representation and zero-shot generalization capabilities, has provided new solutions for image segmentation. 
+However, directly applying SAM to segmenting microstructures in microscopy images without human annotation cannot achieve the expected results, as the difficulty of adapting its native prompt engineering to the dense and dispersed characteristics of key microstructures in different materials. 
+In this paper, we propose MatSAM, a general and efficient microstructure extraction solution based on SAM. A simple yet effective point-based prompt generation strategy is designed, grounded on the distribution and shape of microstructures. 
+Specifically, in an unsupervised and training-free way, it adaptively generates prompt points for different microscopy images, fuses the centroid points of the coarsely extracted region of interest (ROI) and native grid points, and integrates corresponding post-processing operations for quantitative characterization of microstructures of materials. 
+For common microstructures including grain boundary and multiple phases, MatSAM achieves superior zero-shot segmentation performance to conventional rule-based methods and is even preferable to supervised learning methods evaluated on 16 microscopy datasets whose micrographs are imaged by the optical microscope (OM) and scanning electron microscope (SEM). Especially, on 4 public datasets, MatSAM shows unexpected competitive segmentation performance against their specialist models.
+We believe that, without the need for human labeling, MatSAM can significantly reduce the cost of quantitative characterization and statistical analysis of extensive microstructures of materials, and thus accelerate the design of new materials.
 
 
 ## To run the code
