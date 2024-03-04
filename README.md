@@ -38,4 +38,9 @@ and the user can adjust them according to the specific requirements of the datas
   - AZA (XCT-Al-Zn-alloy in https://doi.org/10.1016/j.matchar.2020.110119)
   - UHCS (Ultrahigh-carbon-steel in https://doi.org/10.1016/j.actamat.2023.119086)
 
+- The checkpoints can be downloaded by the links:
+  - ViT-H(default): [ViT-H SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)
+  - ViT-L: [ViT-L SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth)
+  - ViT-B: [ViT-B SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth)
+
 > For in-house datasets, we will provide partial test data and the corresponding ground truth in the future updates.
