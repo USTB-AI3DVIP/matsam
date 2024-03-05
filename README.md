@@ -42,6 +42,7 @@ and the user can adjust them according to the specific requirements of the datas
   - ViT-H(default): [ViT-H SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)
   - ViT-L: [ViT-L SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth)
   - ViT-B: [ViT-B SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth)  
-  The downloaded checkpoints should be placed in directory matsam/checkpoints/.
+
+  **The downloaded checkpoints should be placed in directory /checkpoints/.**
 
 > For in-house datasets, we will provide partial test data and the corresponding ground truth in the future updates.
