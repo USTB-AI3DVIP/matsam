@@ -22,6 +22,8 @@ We believe that, without the need for human labeling, MatSAM can significantly r
 
 We suggest using conda to create a virtual environment listed in /requirements.txt.
 
+**The required package [gala](https://github.com/janelia-flyem/gala) needs manual installation.**
+
 ### Statement of the code
 
 For ease of reproducibility, we have provided the source code in the form of a jupyter notebook. 
